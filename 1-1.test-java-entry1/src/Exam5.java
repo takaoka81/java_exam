@@ -6,8 +6,8 @@ public class Exam5 {
         System.out.println("byte");
         System.out.println("short");
         System.out.println("long");
-        System.out.println("");
-        System.out.println("");
+        System.out.println("boolean");
+        System.out.println("char");
         
         
     }
