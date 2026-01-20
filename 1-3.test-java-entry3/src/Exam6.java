@@ -9,9 +9,9 @@ public class Exam6 {
         }else if(str == '/'){
             return num1 / num2;
         }else {
-            System.out.println("-1");
+            return -1;
         }
-            return str;
+            
     }
 
     public static void main(String[] args) {
