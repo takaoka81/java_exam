@@ -1,6 +1,5 @@
 package object;
 
-
 public class Car {
     private int speed;
 
