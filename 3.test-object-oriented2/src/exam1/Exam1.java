@@ -2,9 +2,11 @@ package exam1;
 
 public class Exam1 {
     public static void main(String[] args) {
-        Car car = null;
+        Car car = new SuperCar();
+        //SuperCar superCar = new SuperCar();
+        //EcoCar ecoCar = new EcoCar();
 
-        car = new SuperCar();
+       // car = new SuperCar();
 
         car.setName("フェラーリ");
         car.putOnGas();
