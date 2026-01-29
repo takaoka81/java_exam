@@ -11,7 +11,7 @@ public class Exam3 {
 		// 接続情報
 		String url = "jdbc:postgresql://localhost:5432/student";
 		String user = "postgres";
-		String password = "";
+		String password = "fallmoon81";
 
 		Connection con = null; // 使用する変数の宣言
 		PreparedStatement pstmt = null;
@@ -23,7 +23,7 @@ public class Exam3 {
 			con = DriverManager.getConnection(url, user, password);
 
 			// (2)SQL文を作成
-			sql = "SELECT m.id ,m.name,m.age,d.name FROM test_members AS m INNER JOIN test_deps AS d ON m.dep_id = d.id";
+			sql = "SELECT m.id AS id ,m.name AS name ,m.age AS age,d.name AS name FROM test_members AS m INNER JOIN test_deps AS d ON m.dep_id = d.id";
 
 			// (3)SQL実行準備
 			pstmt = con.prepareStatement(sql);
@@ -34,10 +34,10 @@ public class Exam3 {
 			// (5)結果の操作
            // String name = rs.getArray(test_members AS m);
 			while (rs.next()) {
-                System.out.print("id=" + rs.getInt( "m_id"));
-                System.out.print(", name=" + rs.getString("AS m.name"));
-                System.out.print(", age=" + rs.getInt("AS m.age"));
-                System.out.print(", dep_name=" + rs.getString("As d.name"));
+                System.out.print("id=" + rs.getInt( "id"));
+                System.out.print(", name=" + rs.getString("name"));
+                System.out.print(", age=" + rs.getInt("age"));
+                System.out.print(", dep_name=" + rs.getString("name"));
                 System.out.println();
             }
 

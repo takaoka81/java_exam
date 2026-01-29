@@ -10,7 +10,7 @@ public class Exam1 {
 		// 接続情報
 		String url = "jdbc:postgresql://localhost:5432/student";
 		String user = "postgres";
-		String password = "";
+		String password = "fallmoon81";
 
 		Connection con = null; // 使用する変数の宣言
 		PreparedStatement pstmt = null;
