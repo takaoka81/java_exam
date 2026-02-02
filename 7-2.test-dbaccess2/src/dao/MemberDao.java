@@ -26,7 +26,7 @@ public class MemberDao {
 	public List<Member> findAll() {
 		List<Member> members = new ArrayList<>();
 		Connection con = DBManager.createConnection();
-		String sql = "SELECT id, name, age, dep_id FROM " + TABLE_NAME;
+		String sql = "SELECT id, name, age, dep_id FROM " + TABLE_NAME + " ORDER BY age DESC";
 		try {
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			// ここに全件検索処理を書く

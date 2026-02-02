@@ -13,7 +13,7 @@ public class DBManager {
 	private final static String DB_NAME = "student";
 	private final static String URL = "jdbc:postgresql://localhost:5432/" + DB_NAME;
 	private final static String USER_NAME = "postgres";
-	private final static String PASSWORD = "fallmoon81";
+	private final static String PASSWORD = "";
 
 	/**
 	 * データベースに接続します.
