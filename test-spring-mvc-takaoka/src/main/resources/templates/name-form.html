@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>名前入力</title>
+</head>
+<body>
+  <h2>名前を入力してください</h2>
+  <form action="finished.html" th:action="@{/exam03/recive-form}" th:object="${receiveNameForm}" method="post">
+    名前を入力してください<br>
+    <input type="text" name="name" th:field="*{name}">
+    <button>送信</button>
+  </form>
+</body>
+</html>

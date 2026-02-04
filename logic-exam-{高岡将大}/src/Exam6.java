@@ -18,20 +18,25 @@ public class Exam6 {
         numbers.add(num2);
         numbers.add(num3);
 
-        System.out.println("" + numbers.get(0) + numbers.get(1) + numbers.get(2));
-
-        if (numbers.get(0) == 5 || numbers.get(0) == 6 || numbers.get(0) == 7) {
-            if (numbers.get(1) == 5 || numbers.get(1) == 6 || numbers.get(1) == 7) {
-                if (numbers.get(2) == 5 || numbers.get(2) == 6 || numbers.get(2) == 7) {
-                    System.out.println("" + numbers.get(0) + numbers.get(1) + numbers.get(2));
-                    System.out.println("" + numbers.get(0) + numbers.get(2) + numbers.get(1));
-                    System.out.println("" + numbers.get(1) + numbers.get(0) + numbers.get(2));
-                    System.out.println("" + numbers.get(1) + numbers.get(2) + numbers.get(0));
-                    System.out.println("" + numbers.get(2) + numbers.get(1) + numbers.get(0));
-                    System.out.println("" + numbers.get(2) + numbers.get(0) + numbers.get(1));
-
+        for (int i = 0; i < numbers.size(); i++) {
+            for (int j = 0; j < numbers.size(); j++) {
+                for (int k = 0; k < numbers.size(); k++) {
+                    if (i != j && j != k && i != k) {
+                        System.out.println("" + numbers.get(i) + numbers.get(j) + numbers.get(k));
+                    }
                 }
             }
         }
+
+        /*
+         * System.out.println("" + numbers.get(0) + numbers.get(1) + numbers.get(2));
+         * System.out.println("" + numbers.get(0) + numbers.get(2) + numbers.get(1));
+         * System.out.println("" + numbers.get(1) + numbers.get(0) + numbers.get(2));
+         * System.out.println("" + numbers.get(1) + numbers.get(2) + numbers.get(0));
+         * System.out.println("" + numbers.get(2) + numbers.get(1) + numbers.get(0));
+         * System.out.println("" + numbers.get(2) + numbers.get(0) + numbers.get(1));
+         */
+
     }
+
 }
