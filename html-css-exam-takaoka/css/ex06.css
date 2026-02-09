@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.red{
+    background-color: red;
+   width: 130px;
+}
+
+.grenn{
+    background-color: green;
+    width: 130px;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+header{
+    background-color: skyblue;
+    color: white;
+}
+
+.meny{
+    background-color: yellow;
+    color: white;
+    width: auto;
+    flex: auto;
+}
+.maincontets{
+    background-color: red;
+    color: white;
+    width: auto;
+    flex: auto;
+}
+
+.subcontets{
+    color: white;
+    background-color: aqua;
+    width: auto;
+    flex: auto;
+}
+
+footer{
+    color: white;
+    background-color: greenyellow;
+}
