@@ -10,7 +10,10 @@ update items set price = price * 0.9;
 delete from employees where end_date <= '2013-03-31'
 
 問４
-
+SELECT * FROM
+    employees WHERE
+    end_date IS NULL ORDER BY
+    start_date LIMIT 1;
 
 問５
 select r.name as region,
